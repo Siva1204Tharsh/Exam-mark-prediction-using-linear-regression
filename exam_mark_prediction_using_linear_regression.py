@@ -39,10 +39,6 @@ regressor.fit(X_train,y_train)
 ##Prediction
 y_pred=regressor.predict(X_test)
 print(np.column_stack((X_test,y_test,y_pred)))
-##Accuracy
-# from sklearn.metrics import accuracy_score
-# accuracy=accuracy_score(y_test,y_pred)
-# print("Accuracy is",accuracy)
 
 ##RMSE
 from sklearn.metrics import mean_squared_error
